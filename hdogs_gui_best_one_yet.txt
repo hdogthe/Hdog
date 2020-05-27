@@ -1,0 +1,981 @@
+function Tlprt(x,y,z)
+    game.Players.LocalPlayer.Character.Humanoid.Sit = true
+    game.Players.LocalPlayer.Character.Humanoid.Jump = true
+
+    wait(0.05)
+     game.Players.LocalPlayer.Character.Humanoid.Sit = true
+        game.Players.LocalPlayer.Character.Humanoid.Jump = true
+       local tweenService = game:GetService("TweenService")
+       local tweeningInformation = TweenInfo.new(
+   
+3, -- Length
+Enum.EasingStyle.Linear, -- Easing style of the TweenInfo
+Enum.EasingDirection.Out, -- Easing direction of the TweenInfo
+0, -- Number of times the tween will repeat   
+false, -- Should the tween repeat?
+0 -- Delay between each tween  
+)
+local partProperties = {
+    CFrame = CFrame.new(x,y,z)
+}
+        local Tween = tweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart,tweeningInformation,partProperties)
+        Tween:Play()
+            
+            
+            
+            
+    
+end
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Welcome = Instance.new("Frame")
+local welcometext = Instance.new("TextLabel")
+local openmain = Instance.new("TextButton")
+local ImageLabel = Instance.new("ImageLabel")
+local main1 = Instance.new("Frame")
+local arrowdownmain1 = Instance.new("ImageButton")
+local PlayerTab = Instance.new("TextLabel")
+local PlayerTabMenu = Instance.new("Frame")
+local NoClip = Instance.new("TextButton")
+local Fly = Instance.new("TextButton")
+local BTools = Instance.new("TextButton")
+local AllBlueprints = Instance.new("TextButton")
+local PaintTool = Instance.new("TextButton")
+local AntiAFK = Instance.new("TextButton")
+local FreeLand = Instance.new("TextButton")
+local PalmBridge = Instance.new("TextButton")
+local Closemain1 = Instance.new("TextButton")
+local main2 = Instance.new("Frame")
+local TpTab = Instance.new("TextLabel")
+local ImageButton = Instance.new("ImageButton")
+local TeleportTabMenu = Instance.new("Frame")
+local WoodRUs = Instance.new("TextButton")
+local Volcano = Instance.new("TextButton")
+local Bridge = Instance.new("TextButton")
+local Palmisland = Instance.new("TextButton")
+local Cave = Instance.new("TextButton")
+local LandStore = Instance.new("TextButton")
+local LinksLogic = Instance.new("TextButton")
+local Swamp = Instance.new("TextButton")
+local Closemain2 = Instance.new("TextButton")
+local main3 = Instance.new("Frame")
+local arrowdownmain3 = Instance.new("ImageButton")
+local GuiTab = Instance.new("TextLabel")
+local GuiTabMenu = Instance.new("Frame")
+local ReptileGui = Instance.new("TextButton")
+local AutoBuy = Instance.new("TextButton")
+local LumberX = Instance.new("TextButton")
+local LumberGui = Instance.new("TextButton")
+local BloodGui = Instance.new("TextButton")
+local Closemain3 = Instance.new("TextButton")
+local main4 = Instance.new("Frame")
+local arrowdownmain1_2 = Instance.new("ImageButton")
+local SettingTab = Instance.new("TextLabel")
+local Frame = Instance.new("Frame")
+local DestoryGui = Instance.new("TextButton")
+local MakeGuiMoveable = Instance.new("TextButton")
+local MakeGuiNotMoveable = Instance.new("TextButton")
+local Closemain4 = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+game:GetService("UserInputService").InputBegan:connect(function(key)
+if key.KeyCode==Enum.KeyCode.F1 then
+Welcome.Visible = true
+Frame.Visible = false
+end
+end)
+
+Welcome.Name = "Welcome"
+Welcome.Parent = ScreenGui
+Welcome.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+Welcome.Position = UDim2.new(0.330291957, 0, 0.40793258, 0)
+Welcome.Size = UDim2.new(0, 372, 0, 212)
+Welcome.Active = true
+Welcome.Draggable = true
+
+
+welcometext.Name = "welcometext"
+welcometext.Parent = Welcome
+welcometext.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+welcometext.BorderColor3 = Color3.fromRGB(68, 255, 0)
+welcometext.BorderSizePixel = 5
+welcometext.Size = UDim2.new(0, 372, 0, 47)
+welcometext.Font = Enum.Font.SourceSans
+welcometext.Text = "Welcome To Hdog's Gui"
+welcometext.TextColor3 = Color3.fromRGB(68, 255, 0)
+welcometext.TextScaled = true
+welcometext.TextSize = 14.000
+welcometext.TextWrapped = true
+
+openmain.Name = "openmain"
+openmain.Parent = Welcome
+openmain.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+openmain.BorderSizePixel = 5
+openmain.Position = UDim2.new(0.282258064, 0, 0.830188692, 0)
+openmain.Size = UDim2.new(0, 162, 0, 36)
+openmain.Font = Enum.Font.SourceSans
+openmain.Text = "Open Hdog's Gui"
+openmain.TextColor3 = Color3.fromRGB(68, 255, 0)
+openmain.TextSize = 25.000
+openmain.TextWrapped = true
+openmain.MouseButton1Click:connect(function()
+Welcome.Visible = false
+main1.Visible = true
+main2.Visible = true
+main3.Visible = true
+main4.Visible = true
+end)
+
+ImageLabel.Parent = Welcome
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.Position = UDim2.new(0, 0, 0.22169812, 0)
+ImageLabel.Size = UDim2.new(0, 372, 0, 129)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=5094062176"
+
+main1.Name = "main1"
+main1.Parent = ScreenGui
+main1.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+main1.Position = UDim2.new(0.255474448, 0, 0.180451125, 0)
+main1.Size = UDim2.new(0, 131, 0, 22)
+main1.Visible = false
+
+arrowdownmain1.Name = "arrowdownmain1"
+arrowdownmain1.Parent = main1
+arrowdownmain1.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+arrowdownmain1.Position = UDim2.new(0.801526725, 0, 0, 0)
+arrowdownmain1.Size = UDim2.new(0, 26, 0, 22)
+arrowdownmain1.Image = "http://www.roblox.com/asset/?id=5094077450"
+arrowdownmain1.MouseButton1Click:connect(function()
+PlayerTabMenu.Visible = true
+arrowdownmain1.Visible = false
+Closemain1.Visible = true
+end)
+
+
+PlayerTab.Name = "PlayerTab"
+PlayerTab.Parent = main1
+PlayerTab.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+PlayerTab.Size = UDim2.new(0, 105, 0, 22)
+PlayerTab.Font = Enum.Font.SourceSans
+PlayerTab.Text = "Player"
+PlayerTab.TextColor3 = Color3.fromRGB(68, 255, 0)
+PlayerTab.TextScaled = true
+PlayerTab.TextSize = 14.000
+PlayerTab.TextWrapped = true
+
+PlayerTabMenu.Name = "PlayerTabMenu"
+PlayerTabMenu.Parent = main1
+PlayerTabMenu.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+PlayerTabMenu.Position = UDim2.new(0, 0, 1, 0)
+PlayerTabMenu.Size = UDim2.new(0, 131, 0, 338)
+PlayerTabMenu.Visible = false
+
+NoClip.Name = "NoClip"
+NoClip.Parent = PlayerTabMenu
+NoClip.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+NoClip.Position = UDim2.new(0, 0, 0.0406263582, 0)
+NoClip.Size = UDim2.new(0, 131, 0, 27)
+NoClip.Font = Enum.Font.SourceSans
+NoClip.Text = "Noclip"
+NoClip.TextColor3 = Color3.fromRGB(68, 255, 0)
+NoClip.TextSize = 14.000
+NoClip.MouseButton1Down:connect(function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/w0XEUW3y"))() 
+end)
+
+Fly.Name = "Fly"
+Fly.Parent = PlayerTabMenu
+Fly.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+Fly.Position = UDim2.new(0, 0, 0.15690574, 0)
+Fly.Size = UDim2.new(0, 131, 0, 27)
+Fly.Font = Enum.Font.SourceSans
+Fly.Text = "Fly (E)"
+Fly.TextColor3 = Color3.fromRGB(68, 255, 0)
+Fly.TextSize = 14.000
+Fly.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/7rXZ9VNc", true))() 
+end)
+
+BTools.Name = "BTools"
+BTools.Parent = PlayerTabMenu
+BTools.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+BTools.Position = UDim2.new(0, 0, 0.275104612, 0)
+BTools.Size = UDim2.new(0, 131, 0, 27)
+BTools.Font = Enum.Font.SourceSans
+BTools.Text = "BTools"
+BTools.TextColor3 = Color3.fromRGB(68, 255, 0)
+BTools.TextSize = 14.000
+BTools.MouseButton1Down:connect(function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/Lf1ySa1m"))() 
+end)
+
+AllBlueprints.Name = "AllBlueprints"
+AllBlueprints.Parent = PlayerTabMenu
+AllBlueprints.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+AllBlueprints.Position = UDim2.new(0, 0, 0.38842544, 0)
+AllBlueprints.Size = UDim2.new(0, 131, 0, 27)
+AllBlueprints.Font = Enum.Font.SourceSans
+AllBlueprints.Text = "Blueprints"
+AllBlueprints.TextColor3 = Color3.fromRGB(68, 255, 0)
+AllBlueprints.TextSize = 14.000
+AllBlueprints.MouseButton1Down:connect(function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/ZyuZBWgB"))() 
+end)
+
+PaintTool.Name = "PaintTool"
+PaintTool.Parent = PlayerTabMenu
+PaintTool.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+PaintTool.Position = UDim2.new(0, 0, 0.507663429, 0)
+PaintTool.Size = UDim2.new(0, 131, 0, 27)
+PaintTool.Font = Enum.Font.SourceSans
+PaintTool.Text = "Paint"
+PaintTool.TextColor3 = Color3.fromRGB(68, 255, 0)
+PaintTool.TextSize = 14.000
+PaintTool.MouseButton1Down:connect(function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/ixguDdpX"))() 
+end)
+
+AntiAFK.Name = "AntiAFK"
+AntiAFK.Parent = PlayerTabMenu
+AntiAFK.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+AntiAFK.Position = UDim2.new(0, 0, 0.628965199, 0)
+AntiAFK.Size = UDim2.new(0, 131, 0, 27)
+AntiAFK.Font = Enum.Font.SourceSans
+AntiAFK.Text = "Anti AFK"
+AntiAFK.TextColor3 = Color3.fromRGB(68, 255, 0)
+AntiAFK.TextSize = 14.000
+AntiAFK.MouseButton1Down:connect(function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/FBxVC1Aa"))()
+end)
+
+FreeLand.Name = "FreeLand"
+FreeLand.Parent = PlayerTabMenu
+FreeLand.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+FreeLand.Position = UDim2.new(0, 0, 0.744349837, 0)
+FreeLand.Size = UDim2.new(0, 131, 0, 27)
+FreeLand.Font = Enum.Font.SourceSans
+FreeLand.Text = "Free Land"
+FreeLand.TextColor3 = Color3.fromRGB(68, 255, 0)
+FreeLand.TextSize = 14.000
+FreeLand.MouseButton1Down:connect(function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/uUbT4S7Y"))() 
+end)
+
+PalmBridge.Name = "PalmBridge"
+PalmBridge.Parent = PlayerTabMenu
+PalmBridge.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+PalmBridge.Position = UDim2.new(0, 0, 0.865651608, 0)
+PalmBridge.Size = UDim2.new(0, 131, 0, 27)
+PalmBridge.Font = Enum.Font.SourceSans
+PalmBridge.Text = "Palm Bridge"
+PalmBridge.TextColor3 = Color3.fromRGB(68, 255, 0)
+PalmBridge.TextSize = 14.000
+PalmBridge.MouseButton1Down:connect(function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/1ZmG3tZ1"))() 
+end)
+
+Closemain1.Name = "Closemain1"
+Closemain1.Parent = main1
+Closemain1.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+Closemain1.Position = UDim2.new(0.801526725, 0, 0, 0)
+Closemain1.Size = UDim2.new(0, 26, 0, 20)
+Closemain1.Visible = false
+Closemain1.Font = Enum.Font.SourceSans
+Closemain1.Text = "-"
+Closemain1.TextColor3 = Color3.fromRGB(68, 255, 0)
+Closemain1.TextScaled = true
+Closemain1.TextSize = 14.000
+Closemain1.TextWrapped = true
+Closemain1.MouseButton1Click:connect(function()
+arrowdownmain1.Visible = true
+PlayerTabMenu.Visible = false
+Closemain1.Visible = false
+end)
+
+main2.Name = "main2"
+main2.Parent = ScreenGui
+main2.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+main2.Position = UDim2.new(0.395073056, 0, 0.180451125, 0)
+main2.Size = UDim2.new(0, 131, 0, 22)
+main2.Visible = false
+
+TpTab.Name = "TpTab"
+TpTab.Parent = main2
+TpTab.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+TpTab.Size = UDim2.new(0, 105, 0, 22)
+TpTab.Font = Enum.Font.SourceSans
+TpTab.Text = "Teleport"
+TpTab.TextColor3 = Color3.fromRGB(68, 255, 0)
+TpTab.TextScaled = true
+TpTab.TextSize = 14.000
+TpTab.TextWrapped = true
+
+ImageButton.Parent = main2
+ImageButton.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+ImageButton.Position = UDim2.new(0.801526725, 0, 0, 0)
+ImageButton.Size = UDim2.new(0, 26, 0, 22)
+ImageButton.Image = "http://www.roblox.com/asset/?id=5094077450"
+ImageButton.MouseButton1Click:connect(function()
+TeleportTabMenu.Visible = true
+Closemain2.Visible = true
+end)
+
+TeleportTabMenu.Name = "TeleportTabMenu"
+TeleportTabMenu.Parent = main2
+TeleportTabMenu.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+TeleportTabMenu.Position = UDim2.new(0, 0, 1, 0)
+TeleportTabMenu.Size = UDim2.new(0, 131, 0, 338)
+TeleportTabMenu.Visible = false
+
+WoodRUs.Name = "WoodRUs"
+WoodRUs.Parent = TeleportTabMenu
+WoodRUs.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+WoodRUs.Position = UDim2.new(0, 0, 0.0428306013, 0)
+WoodRUs.Size = UDim2.new(0, 131, 0, 27)
+WoodRUs.Font = Enum.Font.SourceSans
+WoodRUs.Text = "Woods R Us"
+WoodRUs.TextColor3 = Color3.fromRGB(68, 255, 0)
+WoodRUs.TextSize = 14.000
+WoodRUs.MouseButton1Down:connect(function()
+
+Tlprt(265, 5, 57)
+end)
+
+Volcano.Name = "Volcano"
+Volcano.Parent = TeleportTabMenu
+Volcano.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+Volcano.Position = UDim2.new(0, 0, 0.275491953, 0)
+Volcano.Size = UDim2.new(0, 131, 0, 27)
+Volcano.Font = Enum.Font.SourceSans
+Volcano.Text = "Volcano"
+Volcano.TextColor3 = Color3.fromRGB(68, 255, 0)
+Volcano.TextSize = 14.000
+Volcano.MouseButton1Down:connect(function()
+
+Tlprt(-1585, 625, 1140)
+end)
+
+Bridge.Name = "Bridge"
+Bridge.Parent = TeleportTabMenu
+Bridge.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+Bridge.Position = UDim2.new(0, 0, 0.508050084, 0)
+Bridge.Size = UDim2.new(0, 131, 0, 27)
+Bridge.Font = Enum.Font.SourceSans
+Bridge.Text = "Bridge"
+Bridge.TextColor3 = Color3.fromRGB(68, 255, 0)
+Bridge.TextSize = 14.000
+Bridge.MouseButton1Down:connect(function()
+
+Tlprt(113, 15, -977)
+end)
+
+Palmisland.Name = "Palmisland"
+Palmisland.Parent = TeleportTabMenu
+Palmisland.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+Palmisland.Position = UDim2.new(0, 0, 0.746628582, 0)
+Palmisland.Size = UDim2.new(0, 131, 0, 27)
+Palmisland.Font = Enum.Font.SourceSans
+Palmisland.Text = "Palm Island"
+Palmisland.TextColor3 = Color3.fromRGB(68, 255, 0)
+Palmisland.TextSize = 14.000
+Palmisland.MouseButton1Down:connect(function()
+
+Tlprt(2549, 5, -42)
+end)
+
+Cave.Name = "Cave"
+Cave.Parent = TeleportTabMenu
+Cave.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+Cave.Position = UDim2.new(0, 0, 0.158215225, 0)
+Cave.Size = UDim2.new(0, 131, 0, 27)
+Cave.Font = Enum.Font.SourceSans
+Cave.Text = "Cave"
+Cave.TextColor3 = Color3.fromRGB(68, 255, 0)
+Cave.TextSize = 14.000
+Cave.MouseButton1Down:connect(function()
+
+Tlprt(3581, -177, 430)
+end)
+
+LandStore.Name = "LandStore"
+LandStore.Parent = TeleportTabMenu
+LandStore.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+LandStore.Position = UDim2.new(0, 0, 0.390876561, 0)
+LandStore.Size = UDim2.new(0, 131, 0, 27)
+LandStore.Font = Enum.Font.SourceSans
+LandStore.Text = "Landstore"
+LandStore.TextColor3 = Color3.fromRGB(68, 255, 0)
+LandStore.TextSize = 14.000
+LandStore.MouseButton1Down:connect(function()
+
+Tlprt(258, 5, -99)
+end)
+
+LinksLogic.Name = "LinksLogic"
+LinksLogic.Parent = TeleportTabMenu
+LinksLogic.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+LinksLogic.Position = UDim2.new(0, 0, 0.629351914, 0)
+LinksLogic.Size = UDim2.new(0, 131, 0, 27)
+LinksLogic.Font = Enum.Font.SourceSans
+LinksLogic.Text = "Links Logic"
+LinksLogic.TextColor3 = Color3.fromRGB(68, 255, 0)
+LinksLogic.TextSize = 14.000
+LinksLogic.MouseButton1Down:connect(function()
+
+Tlprt(4607, 9, -798)
+end)
+
+Swamp.Name = "Swamp"
+Swamp.Parent = TeleportTabMenu
+Swamp.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+Swamp.Position = UDim2.new(0, 0, 0.867930412, 0)
+Swamp.Size = UDim2.new(0, 131, 0, 27)
+Swamp.Font = Enum.Font.SourceSans
+Swamp.Text = "Swamp"
+Swamp.TextColor3 = Color3.fromRGB(68, 255, 0)
+Swamp.TextSize = 14.000
+Swamp.MouseButton1Down:connect(function()
+
+Tlprt(-1209, 138, -801)
+end)
+
+Closemain2.Name = "Closemain2"
+Closemain2.Parent = main2
+Closemain2.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+Closemain2.Position = UDim2.new(0.801526725, 0, 0, 0)
+Closemain2.Size = UDim2.new(0, 26, 0, 20)
+Closemain2.Visible = false
+Closemain2.Font = Enum.Font.SourceSans
+Closemain2.Text = "-"
+Closemain2.TextColor3 = Color3.fromRGB(68, 255, 0)
+Closemain2.TextScaled = true
+Closemain2.TextSize = 14.000
+Closemain2.TextWrapped = true
+Closemain2.MouseButton1Click:connect(function()
+TeleportTabMenu.Visible = false
+arrowdownmain1_2.Visible = true
+Closemain2.Visible = false
+end)
+
+main3.Name = "main3"
+main3.Parent = ScreenGui
+main3.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+main3.Position = UDim2.new(0.535583973, 0, 0.177944869, 0)
+main3.Size = UDim2.new(0, 131, 0, 22)
+main3.Visible = false
+
+arrowdownmain3.Name = "arrowdownmain3"
+arrowdownmain3.Parent = main3
+arrowdownmain3.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+arrowdownmain3.Position = UDim2.new(0.801526725, 0, 0, 0)
+arrowdownmain3.Size = UDim2.new(0, 26, 0, 22)
+arrowdownmain3.Image = "http://www.roblox.com/asset/?id=5094077450"
+arrowdownmain3.MouseButton1Click:connect(function()
+GuiTabMenu.Visible = true
+Closemain3.Visible = true
+arrowdownmain3.Visible = false
+end)
+
+GuiTab.Name = "GuiTab"
+GuiTab.Parent = main3
+GuiTab.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+GuiTab.Position = UDim2.new(-5.96046448e-08, 0, 0, 0)
+GuiTab.Size = UDim2.new(0, 105, 0, 22)
+GuiTab.Font = Enum.Font.SourceSans
+GuiTab.Text = "Gui's"
+GuiTab.TextColor3 = Color3.fromRGB(68, 255, 0)
+GuiTab.TextScaled = true
+GuiTab.TextSize = 14.000
+GuiTab.TextWrapped = true
+
+GuiTabMenu.Name = "GuiTabMenu"
+GuiTabMenu.Parent = main3
+GuiTabMenu.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+GuiTabMenu.Position = UDim2.new(0, 0, 1.04545414, 0)
+GuiTabMenu.Size = UDim2.new(0, 131, 0, 199)
+GuiTabMenu.Visible = false
+
+ReptileGui.Name = "ReptileGui"
+ReptileGui.Parent = GuiTabMenu
+ReptileGui.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+ReptileGui.Position = UDim2.new(0, 0, 0.864321649, 0)
+ReptileGui.Size = UDim2.new(0, 131, 0, 27)
+ReptileGui.Font = Enum.Font.SourceSans
+ReptileGui.Text = "Reptile Gui"
+ReptileGui.TextColor3 = Color3.fromRGB(68, 255, 0)
+ReptileGui.TextSize = 14.000
+ReptileGui.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/p2LWcrBx", true))() 
+end)
+
+AutoBuy.Name = "AutoBuy"
+AutoBuy.Parent = GuiTabMenu
+AutoBuy.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+AutoBuy.Position = UDim2.new(0, 0, 0.663316607, 0)
+AutoBuy.Size = UDim2.new(0, 131, 0, 27)
+AutoBuy.Font = Enum.Font.SourceSans
+AutoBuy.Text = "Auto Buy"
+AutoBuy.TextColor3 = Color3.fromRGB(68, 255, 0)
+AutoBuy.TextSize = 14.000
+AutoBuy.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/udjAimCp", true))()  
+end)
+
+LumberX.Name = "LumberX"
+LumberX.Parent = GuiTabMenu
+LumberX.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+LumberX.Position = UDim2.new(0, 0, 0.472361803, 0)
+LumberX.Size = UDim2.new(0, 131, 0, 27)
+LumberX.Font = Enum.Font.SourceSans
+LumberX.Text = "Lumber X"
+LumberX.TextColor3 = Color3.fromRGB(68, 255, 0)
+LumberX.TextSize = 14.000
+LumberX.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/giy1n2QL", true))()  
+end)
+
+LumberGui.Name = "LumberGui"
+LumberGui.Parent = GuiTabMenu
+LumberGui.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+LumberGui.Position = UDim2.new(0, 0, 0.271356761, 0)
+LumberGui.Size = UDim2.new(0, 131, 0, 27)
+LumberGui.Font = Enum.Font.SourceSans
+LumberGui.Text = "Lumber Gui"
+LumberGui.TextColor3 = Color3.fromRGB(68, 255, 0)
+LumberGui.TextSize = 14.000
+LumberGui.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/drke80DX", true))() 
+end)
+
+BloodGui.Name = "BloodGui"
+BloodGui.Parent = GuiTabMenu
+BloodGui.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+BloodGui.Position = UDim2.new(0, 0, 0.0753768831, 0)
+BloodGui.Size = UDim2.new(0, 131, 0, 27)
+BloodGui.Font = Enum.Font.SourceSans
+BloodGui.Text = "Blood Gui"
+BloodGui.TextColor3 = Color3.fromRGB(68, 255, 0)
+BloodGui.TextSize = 14.000
+BloodGui.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/pvVP1vhg", true))() 
+end)
+
+Closemain3.Name = "Closemain3"
+Closemain3.Parent = main3
+Closemain3.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+Closemain3.Position = UDim2.new(0.801526725, 0, 0, 0)
+Closemain3.Size = UDim2.new(0, 26, 0, 22)
+Closemain3.Visible = false
+Closemain3.Font = Enum.Font.SourceSans
+Closemain3.Text = "-"
+Closemain3.TextColor3 = Color3.fromRGB(68, 255, 0)
+Closemain3.TextScaled = true
+Closemain3.TextSize = 14.000
+Closemain3.TextWrapped = true
+Closemain3.MouseButton1Click:connect(function()
+GuiTabMenu.Visible = false
+arrowdownmain3.Visible = true
+Closemain3.Visible = false
+end)
+
+main4.Name = "main4"
+main4.Parent = ScreenGui
+main4.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+main4.Position = UDim2.new(0.676094949, 0, 0.177944869, 0)
+main4.Size = UDim2.new(0, 131, 0, 22)
+main4.Visible = false
+
+arrowdownmain1_2.Name = "arrowdownmain1"
+arrowdownmain1_2.Parent = main4
+arrowdownmain1_2.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+arrowdownmain1_2.Position = UDim2.new(0.801526725, 0, 0, 0)
+arrowdownmain1_2.Size = UDim2.new(0, 26, 0, 22)
+arrowdownmain1_2.Image = "http://www.roblox.com/asset/?id=5094077450"
+arrowdownmain1_2.MouseButton1Click:connect(function()
+Frame.Visible = true
+arrowdownmain1_2.Visible = false
+Closemain4.Visible = true
+end)
+
+SettingTab.Name = "SettingTab"
+SettingTab.Parent = main4
+SettingTab.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+SettingTab.Position = UDim2.new(-7.4505806e-09, 0, -5.96046448e-08, 0)
+SettingTab.Size = UDim2.new(0, 105, 0, 22)
+SettingTab.Font = Enum.Font.SourceSans
+SettingTab.Text = "Settings"
+SettingTab.TextColor3 = Color3.fromRGB(68, 255, 0)
+SettingTab.TextScaled = true
+SettingTab.TextSize = 14.000
+SettingTab.TextWrapped = true
+
+Frame.Parent = main4
+Frame.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+Frame.Position = UDim2.new(0, 0, 1.04545414, 0)
+Frame.Size = UDim2.new(0, 131, 0, 132)
+Frame.Visible = false
+
+DestoryGui.Name = "DestoryGui"
+DestoryGui.Parent = Frame
+DestoryGui.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+DestoryGui.Position = UDim2.new(0, 0, 0.113636367, 0)
+DestoryGui.Size = UDim2.new(0, 131, 0, 27)
+DestoryGui.Font = Enum.Font.SourceSans
+DestoryGui.Text = "Destory Gui"
+DestoryGui.TextColor3 = Color3.fromRGB(68, 255, 0)
+DestoryGui.TextSize = 14.000
+DestoryGui.MouseButton1Click:connect(function()
+main1.Visible = false
+main2.Visible = false
+main3.Visible = false
+main4.Visible = false
+end)
+
+MakeGuiMoveable.Name = "MakeGuiMoveable"
+MakeGuiMoveable.Parent = Frame
+MakeGuiMoveable.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+MakeGuiMoveable.Position = UDim2.new(0, 0, 0.409090906, 0)
+MakeGuiMoveable.Size = UDim2.new(0, 131, 0, 27)
+MakeGuiMoveable.Font = Enum.Font.SourceSans
+MakeGuiMoveable.Text = "Gui Moveable"
+MakeGuiMoveable.TextColor3 = Color3.fromRGB(68, 255, 0)
+MakeGuiMoveable.TextSize = 14.000
+MakeGuiMoveable.MouseButton1Click:connect(function()
+main1.Active = true
+main1.Draggable = true
+main2.Active = true
+main2.Draggable = true
+main3.Active = true
+main3.Draggable = true
+main4.Active = true
+main4.Draggable = true
+end)
+
+MakeGuiNotMoveable.Name = "MakeGuiNotMoveable"
+MakeGuiNotMoveable.Parent = Frame
+MakeGuiNotMoveable.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+MakeGuiNotMoveable.Position = UDim2.new(0, 0, 0.712121248, 0)
+MakeGuiNotMoveable.Size = UDim2.new(0, 131, 0, 27)
+MakeGuiNotMoveable.Font = Enum.Font.SourceSans
+MakeGuiNotMoveable.Text = "Gui Not Moveable"
+MakeGuiNotMoveable.TextColor3 = Color3.fromRGB(68, 255, 0)
+MakeGuiNotMoveable.TextSize = 14.000
+MakeGuiNotMoveable.MouseButton1Click:connect(function()
+main1.Active = false
+main1.Draggable = false
+main2.Active = false
+main2.Draggable = false
+main3.Active = false
+main3.Draggable = false
+main4.Active = false
+main4.Draggable = false
+end)
+
+Closemain4.Name = "Closemain4"
+Closemain4.Parent = main4
+Closemain4.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+Closemain4.Position = UDim2.new(0.801526725, 0, 0, 0)
+Closemain4.Size = UDim2.new(0, 26, 0, 22)
+Closemain4.Visible = false
+Closemain4.Font = Enum.Font.SourceSans
+Closemain4.Text = "-"
+Closemain4.TextColor3 = Color3.fromRGB(68, 255, 0)
+Closemain4.TextScaled = true
+Closemain4.TextSize = 14.000
+Closemain4.TextWrapped = true
+Closemain4.MouseButton1Click:connect(function()
+Frame.Visible = false
+arrowdownmain1_2.Visible = true
+Closemain4.Visible = false
+end)
+
+-- Scripts:
+
+local function FJXO_fake_script() -- PlayerTab.Script 
+	local script = Instance.new('Script', PlayerTab)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	
+	counter = 0
+	
+	while wait(0.2)do
+	 script.Parent.TextColor3 = Color3.fromHSV(zigzag(counter),1,1)
+	 
+	 counter = counter + 0.01
+	end
+end
+coroutine.wrap(FJXO_fake_script)()
+local function CMVK_fake_script() -- NoClip.Script 
+	local script = Instance.new('Script', NoClip)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	
+	counter = 0
+	
+	while wait(0.2)do
+	 script.Parent.TextColor3 = Color3.fromHSV(zigzag(counter),1,1)
+	 
+	 counter = counter + 0.01
+	end
+end
+coroutine.wrap(CMVK_fake_script)()
+local function QESHC_fake_script() -- Fly.Script 
+	local script = Instance.new('Script', Fly)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	
+	counter = 0
+	
+	while wait(0.2)do
+	 script.Parent.TextColor3 = Color3.fromHSV(zigzag(counter),1,1)
+	 
+	 counter = counter + 0.01
+	end
+end
+coroutine.wrap(QESHC_fake_script)()
+local function VDVBUCF_fake_script() -- BTools.Script 
+	local script = Instance.new('Script', BTools)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	
+	counter = 0
+	
+	while wait(0.2)do
+	 script.Parent.TextColor3 = Color3.fromHSV(zigzag(counter),1,1)
+	 
+	 counter = counter + 0.01
+	end
+end
+coroutine.wrap(VDVBUCF_fake_script)()
+local function ELMD_fake_script() -- AllBlueprints.Script 
+	local script = Instance.new('Script', AllBlueprints)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	
+	counter = 0
+	
+	while wait(0.2)do
+	 script.Parent.TextColor3 = Color3.fromHSV(zigzag(counter),1,1)
+	 
+	 counter = counter + 0.01
+	end
+end
+coroutine.wrap(ELMD_fake_script)()
+local function HBRU_fake_script() -- PaintTool.Script 
+	local script = Instance.new('Script', PaintTool)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	
+	counter = 0
+	
+	while wait(0.2)do
+	 script.Parent.TextColor3 = Color3.fromHSV(zigzag(counter),1,1)
+	 
+	 counter = counter + 0.01
+	end
+end
+coroutine.wrap(HBRU_fake_script)()
+local function GUPYB_fake_script() -- AntiAFK.Script 
+	local script = Instance.new('Script', AntiAFK)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	
+	counter = 0
+	
+	while wait(0.2)do
+	 script.Parent.TextColor3 = Color3.fromHSV(zigzag(counter),1,1)
+	 
+	 counter = counter + 0.01
+	end
+end
+coroutine.wrap(GUPYB_fake_script)()
+local function QOAYS_fake_script() -- FreeLand.Script 
+	local script = Instance.new('Script', FreeLand)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	
+	counter = 0
+	
+	while wait(0.2)do
+	 script.Parent.TextColor3 = Color3.fromHSV(zigzag(counter),1,1)
+	 
+	 counter = counter + 0.01
+	end
+end
+coroutine.wrap(QOAYS_fake_script)()
+local function FWPTD_fake_script() -- PalmBridge.Script 
+	local script = Instance.new('Script', PalmBridge)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	
+	counter = 0
+	
+	while wait(0.2)do
+	 script.Parent.TextColor3 = Color3.fromHSV(zigzag(counter),1,1)
+	 
+	 counter = counter + 0.01
+	end
+end
+coroutine.wrap(FWPTD_fake_script)()
+local function SKPDHB_fake_script() -- TpTab.Script 
+	local script = Instance.new('Script', TpTab)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	
+	counter = 0
+	
+	while wait(0.2)do
+	 script.Parent.TextColor3 = Color3.fromHSV(zigzag(counter),1,1)
+	 
+	 counter = counter + 0.01
+	end
+end
+coroutine.wrap(SKPDHB_fake_script)()
+local function VPAHG_fake_script() -- WoodRUs.Script 
+	local script = Instance.new('Script', WoodRUs)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	
+	counter = 0
+	
+	while wait(0.2)do
+	 script.Parent.TextColor3 = Color3.fromHSV(zigzag(counter),1,1)
+	 
+	 counter = counter + 0.01
+	end
+end
+coroutine.wrap(VPAHG_fake_script)()
+local function VCZHD_fake_script() -- Volcano.Script 
+	local script = Instance.new('Script', Volcano)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	
+	counter = 0
+	
+	while wait(0.2)do
+	 script.Parent.TextColor3 = Color3.fromHSV(zigzag(counter),1,1)
+	 
+	 counter = counter + 0.01
+	end
+end
+coroutine.wrap(VCZHD_fake_script)()
+local function ORUSVY_fake_script() -- Bridge.Script 
+	local script = Instance.new('Script', Bridge)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	
+	counter = 0
+	
+	while wait(0.2)do
+	 script.Parent.TextColor3 = Color3.fromHSV(zigzag(counter),1,1)
+	 
+	 counter = counter + 0.01
+	end
+end
+coroutine.wrap(ORUSVY_fake_script)()
+local function XNRQLU_fake_script() -- Palmisland.Script 
+	local script = Instance.new('Script', Palmisland)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	
+	counter = 0
+	
+	while wait(0.2)do
+	 script.Parent.TextColor3 = Color3.fromHSV(zigzag(counter),1,1)
+	 
+	 counter = counter + 0.01
+	end
+end
+coroutine.wrap(XNRQLU_fake_script)()
+local function XBAQAEJ_fake_script() -- Cave.Script 
+	local script = Instance.new('Script', Cave)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	
+	counter = 0
+	
+	while wait(0.2)do
+	 script.Parent.TextColor3 = Color3.fromHSV(zigzag(counter),1,1)
+	 
+	 counter = counter + 0.01
+	end
+end
+coroutine.wrap(XBAQAEJ_fake_script)()
+local function RTFC_fake_script() -- LandStore.Script 
+	local script = Instance.new('Script', LandStore)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	
+	counter = 0
+	
+	while wait(0.2)do
+	 script.Parent.TextColor3 = Color3.fromHSV(zigzag(counter),1,1)
+	 
+	 counter = counter + 0.01
+	end
+end
+coroutine.wrap(RTFC_fake_script)()
+local function GGCE_fake_script() -- LinksLogic.Script 
+	local script = Instance.new('Script', LinksLogic)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	
+	counter = 0
+	
+	while wait(0.2)do
+	 script.Parent.TextColor3 = Color3.fromHSV(zigzag(counter),1,1)
+	 
+	 counter = counter + 0.01
+	end
+end
+coroutine.wrap(GGCE_fake_script)()
+local function BOPCCV_fake_script() -- Swamp.Script 
+	local script = Instance.new('Script', Swamp)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	
+	counter = 0
+	
+	while wait(0.2)do
+	 script.Parent.TextColor3 = Color3.fromHSV(zigzag(counter),1,1)
+	 
+	 counter = counter + 0.01
+	end
+end
+coroutine.wrap(BOPCCV_fake_script)()
+local function PDNOGSP_fake_script() -- GuiTab.Script 
+	local script = Instance.new('Script', GuiTab)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	
+	counter = 0
+	
+	while wait(0.2)do
+	 script.Parent.TextColor3 = Color3.fromHSV(zigzag(counter),1,1)
+	 
+	 counter = counter + 0.01
+	end
+end
+coroutine.wrap(PDNOGSP_fake_script)()
+local function CFSCF_fake_script() -- SettingTab.Script 
+	local script = Instance.new('Script', SettingTab)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	
+	counter = 0
+	
+	while wait(0.2)do
+	 script.Parent.TextColor3 = Color3.fromHSV(zigzag(counter),1,1)
+	 
+	 counter = counter + 0.01
+	end
+end
+coroutine.wrap(CFSCF_fake_script)()
